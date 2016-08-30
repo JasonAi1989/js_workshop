@@ -11,6 +11,9 @@
 	alert(abc+" length is :"+abc.length);
 	*/
 
+	var m = new map();
+	var s = new set();
+
 	//test function
 	function testFunc (id) {
 		// body...
@@ -27,6 +30,34 @@
 
 	function testButton () {
 		alert("You are clicking a button!");
+	}
+
+	function testButton2 () {
+		var c = ["hello", "World", 2, 4];
+
+		c.forEach(function (element, index, array) {
+			alert(element);
+		});
+	}
+
+	function testButton3 () {
+		var factor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+		var result = factor.reduce(function  (a, b) {
+			return a+b;
+		});
+
+		alert("result is " + result);
+	}
+
+	function testButton4 () {
+		var factor = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+		var result = factor.map(function (a) {
+			return a * a;
+		});
+
+		alert(result);
 	}
 	</script>
 
@@ -55,6 +86,34 @@
 <p>标准字体<ins>定义插入字</ins></p>
 <p>标准字体<del>定义删除字</del></p>
 
+<button onclick="testButton2()">Run</button>
+
+<br />
+
+<button onclick="testButton3()">Reduce Multiply</button>
+
+<br />
+
+<button onclick="testButton4()">Map Power</button>
+
+<br />
+
+<button onclick="testButton5()">告诉我浏览器窗口大小</button>
+<script type="text/javascript">
+	function testButton5 () {
+		// body...
+		alert('window inner size: ' + window.innerWidth + ' x ' + window.innerHeight);
+	}
+
+	function testButton6 () {
+		// body...
+		alert('Screen size = ' + screen.width + ' x ' + screen.height);
+	}
+</script>
+
+<br />
+
+<button onclick="testButton6()">告诉我屏幕大小</button>
 </body>
 
 </html>
