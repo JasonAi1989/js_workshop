@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+	<script type="text/javascript">
+	'use strict'
+
+	//test alert 
+	/*
+	var abc = "Are you OK?\n";
+	alert(abc+" length is :"+abc.length);
+	*/
+
+	//test function
+	function testFunc (id) {
+		// body...
+		var person = {
+			arms:2,
+			legs:2,
+			head:1,
+			eyes:2,
+			fingers:10
+		};
+
+		return person[id];
+	}
+
+	function testButton () {
+		alert("You are clicking a button!");
+	}
+	</script>
+
+</head>
+
+<body>
+<p>This is a test page.</p>
+<script type="text/javascript">
+	document.write("I have "+testFunc("arms")+" arms and "+testFunc("fingers")+" fingers, how about you?");
+</script>
+
+<br />
+
+<button onclick="testButton()">I'm Button</button>
+
+<p style="font-family:Times;color:red;font-size:20px;background-color:black;text-align:center">八任公安局长接力28年 3D揭秘“白银案”侦破细节</p>
+
+<p>标准字体<b>定义粗体文本</b></p>
+<p>标准字体<big>定义大字号</big></p>
+<p>标准字体<em>定义着重文字</em></p>
+<p>标准字体<i>定义斜体</i></p>
+<p>标准字体<small>定义小子号</small></p>
+<p>标准字体<strong>定义加重语气</strong></p>
+<p>标准字体<sub>定义下标字</sub></p>
+<p>标准字体<sup>定义上标字</sup></p>
+<p>标准字体<ins>定义插入字</ins></p>
+<p>标准字体<del>定义删除字</del></p>
+
+</body>
+
+</html>
